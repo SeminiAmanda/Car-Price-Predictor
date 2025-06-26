@@ -1,21 +1,20 @@
-# Use official Python image
+# Use an official Python base image
 FROM python:3.10-slim
 
 # Set working directory
 WORKDIR /app
 
-# Copy requirements and project files
-COPY requirements.txt ./
-COPY . .
+# Copy requirements (create this file with your dependencies)
+COPY requirements.txt .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose Streamlit port
-EXPOSE 8501
+# Copy your notebook and data (adjust path as needed)
+COPY . .
 
-# Set environment variables (optional, for Streamlit)
-ENV PYTHONUNBUFFERED=1
+# Expose Jupyter port
+EXPOSE 8888
 
-# Run Streamlit app (replace 'your_streamlit_app.py' with your actual Streamlit file)
-CMD ["streamlit", "run", "src/your_streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+# Start Jupyter Notebook
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
