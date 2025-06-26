@@ -4,6 +4,10 @@
 
 A web application to **predict the selling price of used cars** based on various features like model year, kilometers driven, fuel type, etc. This project uses **Linear Regression** and **Lasso Regression** models to provide accurate price predictions.
 
+## 🌐 Data Used
+![Kaggle Data set link](https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho?select=car+data.csv) 
+This dataset contains information about used cars listed on different websites
+
 ## 🧠 Models Used
 
 * **Linear Regression**: Captures the overall trend and provides a baseline model.
@@ -19,7 +23,7 @@ A web application to **predict the selling price of used cars** based on various
 
 ## 🌐 App Preview
 
-![Streamlit App Screenshot](./streamlit.png) 
+![Streamlit App Screenshot](./Streamlit.pdf) 
 
 ## 🛠️ Tech Stack
 
@@ -62,9 +66,9 @@ streamlit run app.py
 * Deploy app on Hugging Face or Render
 * Enhance UI/UX with images and graphs
 
-## 📸 App Screenshot
 
-<img src="./streamlit.png" width="800px">
+📓 [View the setup jupyter or Streamlit](./Environment_Setup_Guide.md)
+
 
 ---
 
