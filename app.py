@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load the trained Lasso model
-model = joblib.load('lasso_model.pkl')  # Make sure file name is correct
+model = joblib.load('lasso_model.pkl')  
 
 # Streamlit App Title
 st.title("🚗 Car Price Predictor using Lasso Regression")
