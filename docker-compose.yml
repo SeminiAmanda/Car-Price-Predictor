@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  streamlit-app:
+    build: .
+    container_name: streamlit_app_container
+    ports:
+      - "8501:8501"    # Map Streamlit port
+      - "8888:8888"    # Optional: Jupyter port if used
+    volumes:
+      - .:/app         # Sync project folder with /app in container
+    working_dir: /app  # Ensure commands run from /app
+    command: streamlit run app.py --server.port=8501 --server.address=0.0.0.0
