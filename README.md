@@ -23,7 +23,7 @@ This dataset contains information about used cars listed on different websites
 
 ## 🌐 App Preview
 
-![Streamlit App Screenshot](./Streamlit.pdf) 
+![Streamlit App Screenshot](Streamlit.pdf) 
 
 ## 🛠️ Tech Stack
 
@@ -45,6 +45,7 @@ streamlit run app.py
 
 ```
 ├── app.py                # Streamlit app
+├── Data.ipynb              # Juoyter notebook
 ├── model_linear.pkl      # Trained Linear model
 ├── model_lasso.pkl       # Trained Lasso model
 ├── requirements.txt
@@ -67,7 +68,7 @@ streamlit run app.py
 * Enhance UI/UX with images and graphs
 
 
-📓 [View the setup jupyter or Streamlit](./Environment_Setup_Guide.md)
+📓 [View the setup jupyter or Streamlit](Environment_Setup_Guide.md)
 
 
 ---
